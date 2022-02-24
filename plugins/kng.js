@@ -9,9 +9,9 @@ let handler = async (m) => {
     let user = global.db.data.users[who]
 let tqto = `
 ┌〔 𝘿𝙤𝙣𝙖𝙨𝙞 • 𝙀𝙢𝙤𝙣𝙚𝙮 
-├ _DANA_ : *0882-7926-8363*
-├ _SAWERIA_ : *https://saweria.co/raraharsita2*
-├ *SELAIN DANA VIA QR AJA ATAU SAWERIA*
+├ _DANA/GOPAY_ : *0899-2029-499*
+├ _SAWERIA_ : *https://saweria.co/cocopie*
+├ _PULSA_ : *0895-3544-37300*
 └────`
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
@@ -22,15 +22,15 @@ let tqto = `
            hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {
-               displayText: '𝙶𝙴𝚃 𝙱𝙾𝚃',
-               url: 'https://pastelink.net/v20Md'
+               displayText: 'Source Code',
+               url: 'https://github.com/iCocopie/CocoBotzV9'
              }
 
            },
        
                {
              quickReplyButton: {
-               displayText: '𝙱𝙰𝙲𝙺 𝚃𝙾 𝙼𝙴𝙽𝚄',
+               displayText: 'Back To Menu',
                id: '.menu',
              }
 
