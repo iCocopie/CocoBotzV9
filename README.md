@@ -7,7 +7,7 @@
 <a href="#"><img title="COCOBOTZ MULTI DEVICE" src="https://img.shields.io/badge/COCOBOTZ MULTI DEVICE-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
-<a href="https://github.com/iCocopie"><img title="Author" src="https://img.shields.io/badge/Author-CocoBotz-red.svg?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/iCocopie"><img title="Author" src="https://img.shields.io/badge/Author-Cocopie-red.svg?style=for-the-badge&logo=github"></a>
 </p>
 <p align="center">
 <a href="https://github.com/"><img title="Followers" src="https://img.shields.io/github/followers/iCocopie?color=blue&style=flat-square"></a>
@@ -17,32 +17,31 @@
 <p align="center">
   <a href="https://github.com/saipulanuar/v20-Md#requirements">Requirements</a> •
   <a href="https://github.com/saipulanuar/v19-Md#instalasi">Installation</a> •
-  <a href="https://github.com/saipulanuar/v20-Md#thanks-to">Thanks to</a> •
+  <a href="https://github.com/saipulanuar/v20-Md#thanks-to">Thanks To</a> •
   <a href="https://github.com/saipulanuar/v20-Md#Official-Group"> Official Group Bot</a> •
   <a href="https://github.com/saipulanuar/v20-Md#donate">Donate</a>
 </p>
 </div>
 ---
 
-# YUKI BOT Whatsapp MD
+# CocoBotz Multi Device
 ## For Users Termux Install Module [here](https://github.com/Ilhamskhyzi/node_modules)
 ## Information
-> YUKI BOT whatsapp using a Baileys library.
-> Jika kamu menemukan semacam bug, harap untuk dimaklumi sementara
+> CocoBotz-MD WhatsApp Using a Baileys Library.
 >
-> • NOTE: Pastikan Jaringan kalian lancar dan device kalian bagus:v, 
+> • NOTE: Pastikan Jaringan Kalian Lancar Dan device
 > 
-> • Kalo pake termux mungkin bakal lama respon nya, saya sarankan pake heroku
+> • Kalo Pake Termux Mungkin Bakal Lama Respon Nya, Saya Sarankan Pake Heroku
 
-<h3 align="center">Made by :</h3>
+<h3 align="center">Made By :</h3>
 <p align="center">
-  <a href="https://github.com/saipulanuar"><img src="https://github.com/saipulanuar.png?size=128" height="128" width="128" /></a>
+  <a href="https://github.com/iCocopie"><img src="https://github.com/iCocopie.png?size=128" height="128" width="128" /></a>
   <a href="https://github.com/nurutomo"><img src="https://github.com/nurutomo.png?size=128" height="128" width="128" /></a>
 </p>
 
 ## Tester Bot
-* Jika kamu menemukan bug jangan lupa buka Issues
-* Info Lebih Lanjut, Chat [Owner-YukiBot](https://wa.me/6288279268363)
+* Jika Kamu Menemukan Bug Jangan Lupa Buka Issues
+* Info Lebih Lanjut, Chat [Owner-CocoBotz](https://wa.me/628992029499)
 
 ## How To Change Menu Display
 ----
@@ -112,8 +111,8 @@ let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/shir
 * Unduh & Instal ImageMagick [`Klik Disini`](https://imagemagick.org/script/download.php)
 
 ```bash
-git clone https://github.com/saipulanuar/v20-Md
-cd v20-Md
+git clone https://github.com/iCocopie/CocoBotzV9
+cd CocoBotzV9
 npm install
 npm update
 npm index
@@ -129,8 +128,8 @@ pkg install nodejs
 pkg install ffmpeg
 pkg install imagemagick
 pkg install yarn
-git clone https://github.com/saipulanuar/v20-Md
-cd v20-Md
+git clone https://github.com/iCocopie/CocoBotzV9
+cd CocoBotzV9
 yarn
 node .
 ```
@@ -158,8 +157,8 @@ Jika berhasil, akan memberikanmu pesan seperti: `SUCCESS: specified value was sa
 ```
 
 # Thanks to
- [![Nurutomo](https://github.com/Nurutomo.png?size=150)](https://github.com/Nurutomo) | [![KingOfBear](https://github.com/saipulanuar.png?size=150)](https://github.com/saipulanuar) | [![Istikmal](https://github.com/BochilGaming.png?size=150)](https://github.com/BochilGaming)
+ [![Nurutomo](https://github.com/Nurutomo.png?size=150)](https://github.com/Nurutomo) | [![Cocopie](https://github.com/iCocopie.png?size=150)](https://github.com/iCocopie) | [![Istikmal](https://github.com/BochilGaming.png?size=150)](https://github.com/BochilGaming)
 ----|----|----
 [Nurutomo](https://github.com/Nurutomo) | [KingOfBear](https://github.com/saipulanuar) | [Istikmal](https://github.com/BochilGaming)
- Author | yg nambah fitur | yg punya sc
+ Author | Recoder | Yg Punya SC
 
