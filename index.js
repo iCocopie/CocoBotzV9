@@ -8,15 +8,15 @@ const Readline = require('readline')
 const yargs = require('yargs/yargs')
 const rl = Readline.createInterface(process.stdin, process.stdout)
 
-CFonts.say('Yuki-Bot\nMulti-device ', {
+CFonts.say('CocoBotz\nMulti-Device ', {
   font: 'chrome',
   align: 'center',
   gradient: ['red', 'magenta']
 })
-CFonts.say(`'${package.name}' By @${package.author.name || package.author}`, {
+CFonts.say(`'CocoBotz-MD' By Cocopie`, {
   font: 'console',
   align: 'center',
-  gradient: ['red', 'magenta']
+  gradient: ['magenta', 'red']
 })
 
 var isRunning = false
