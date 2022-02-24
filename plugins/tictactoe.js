@@ -26,13 +26,12 @@ let handler = async (m, { conn, usedPrefix, command, text }) => {
             }[v]
         })
         let str = `
-Room ID: ${room.id}
+Room ID : ${room.id}
 ${arr.slice(0, 3).join('')}
 ${arr.slice(3, 6).join('')}
 ${arr.slice(6).join('')}
 
 Menunggu @${room.game.currentTurn.split('@')[0]}
-Ketik *nyerah* untuk nyerah
 `.trim()
         if (room.x !== room.o) m.reply(str, room.x, {
             contextInfo: {
@@ -53,7 +52,7 @@ Ketik *nyerah* untuk nyerah
             state: 'WAITING'
         }
         if (text) room.name = text
-        m.reply('Menunggu partner' + (text ? `mengetik command dibawah ini
+        m.reply('Menunggu Partner' + (text ? `Mengetik Command Dibawah Ini
 ${usedPrefix}${command} ${text}` : ''))
         conn.game[room.id] = room
     }
