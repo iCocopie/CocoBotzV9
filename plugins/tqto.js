@@ -19,6 +19,8 @@ let tqto = `
 
 Nurutomo: 
 https://github.com/Nurutomo
+Cocopie:
+https://github.com/iCocopie
 Istikmal: 
 https://github.com/BochilGaming
 Ariffb: 
@@ -40,7 +42,7 @@ https://github.com/Ilhamskhzyi
            hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {
-               displayText: '𝙶𝙴𝚃 𝙱𝙾𝚃',
+               displayText: 'Source Code',
                url: `${ApiiKey}`
              }
 
@@ -48,7 +50,7 @@ https://github.com/Ilhamskhzyi
        
                {
              quickReplyButton: {
-               displayText: '𝙱𝙰𝙲𝙺 𝚃𝙾 𝙼𝙴𝙽𝚄',
+               displayText: 'Back To Menu',
                id: '.menu',
              }
 
