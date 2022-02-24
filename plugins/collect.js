@@ -4,11 +4,11 @@ let handler = async (m, { conn }) => {
     let timers = clockString(_timers) 
     let user = global.db.data.users[m.sender]
     if (new Date - global.db.data.users[m.sender].lastclaim > 43200000) {
-        conn.reply(m.chat, `Kamu sudah mengclaim dan mendapatkan *1000* 💵money dan *1* 🥤potion`, m)
-        user.money += 1000
-        user.potion += 1
+        conn.reply(m.chat, `Kamu Sudah Meng-Claim Dan Mendapatkan *10.000* 💵 Money dan *5* 🥤 Potion`, m)
+        user.money += 10000
+        user.potion += 5
         user.lastclaim = new Date * 1
-    } else conn.reply(m.chat, `silahkan tunggu *${timers}* lagi untuk bisa mengclaim lagi`, m)
+    } else conn.reply(m.chat, `Silahkan Tunggu *${timers}* Untuk Bisa Meng-Claim Lagi`, m)
 }
 handler.help = ['collect']
 handler.tags = ['rpg']
