@@ -1,11 +1,11 @@
 let moment = require('moment-timezone')
 let fs = require('fs')
 let handler = async (m, { conn, command }) => {
-let img = './src/mike.png'
+let img = './src/img1.png'
 let img1 = fs.readFileSync('./src/img1.png')
 let img2 = fs.readFileSync('./src/img2.png')
 let user = global.DATABASE.data.users[m.sender]
-/*conn.sendFile(m.chat, img, '', `Halo juga kak ${conn.getName(m.sender)}`, { key: { fromMe: false, remoteJid: 'status@broadcast', participant: '0@s.whatsapp.net' }, message: { orderMessage: { message: `${ucapan()} ${conn.getName(m.sender)}`, itemCount: 999, thumbnail: fs.readFileSync('./src/mikey.jpg')
+/*conn.sendFile(m.chat, img, '', `Halo juga kak ${conn.getName(m.sender)}`, { key: { fromMe: false, remoteJid: 'status@broadcast', participant: '0@s.whatsapp.net' }, message: { orderMessage: { message: `${ucapan()} ${conn.getName(m.sender)}`, itemCount: 999, thumbnail: fs.readFileSync('./src/img1.jpg')
 }}})*/
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let name = m.fromMe ? conn.user : conn.contacts[who]
