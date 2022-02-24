@@ -45,8 +45,8 @@ handler.before = function (m) {
                                                                                                                                                                 : ((user.level >= 185) && (user.level <= 200)) ? 'Octagram'
                                                                                                                                                                     : ((user.level >= 200) && (user.level <= 400)) ? 'Older demon lord'
                                                                                                                                                                         : ((user.level >= 405) && (user.level <= 700)) ? 'Great demon lord'
-                                                                                                                                                                            : ((user.level >= 700) && (user.level <= 1000)) ? 'Strongest demon lord'
-                                                                                                                                                                                : 'Star king dragon'
+                                                                                                                                                                            : ((user.level >= 700) && (user.level <= 1000)) ? 'Developer'
+                                                                                                                                                                                : 'Developer'
 
 
     user.role = role
