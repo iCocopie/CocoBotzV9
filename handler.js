@@ -26,7 +26,7 @@ module.exports = {
                 if (typeof user !== 'object') global.db.data.users[m.sender] = {}
                 if (user) {
                     if (!isNumber(user.exp)) user.exp = 0
-                    if (!isNumber(user.limit)) user.limit = 10
+                    if (!isNumber(user.limit)) user.limit = 50
                     if (!isNumber(user.lastclaim)) user.lastclaim = 0
                     if (!('registered' in user)) user.registered = false
                     if (!user.registered) {
@@ -40,10 +40,10 @@ module.exports = {
                     if (!isNumber(user.warn)) user.warn = 0
                     if (!isNumber(user.level)) user.level = 0
                     if (!user.role) user.role = 'Beginner'
-                    if (!('autolevelup' in user)) user.autolevelup = false
+                    if (!('autolevelup' in user)) user.autolevelup = true
 
-                    if (!isNumber(user.money)) user.money = 0
-                    if (!isNumber(user.healt)) user.healt = 100
+                    if (!isNumber(user.money)) user.money = 100000
+                    if (!isNumber(user.healt)) user.healt = 1000
                     if (!isNumber(user.limit)) user.limit = 0
                     if (!isNumber(user.potion)) user.potion = 0
                     if (!isNumber(user.sampah)) user.sampah = 0
@@ -100,7 +100,7 @@ module.exports = {
                     if (!isNumber(user.warning)) user.warning = 0
                 } else global.db.data.users[m.sender] = {
                     exp: 0,
-                    limit: 10,
+                    limit: 50,
                     lastclaim: 0,
                     registered: false,
                     name: m.name,
@@ -112,10 +112,10 @@ module.exports = {
                     warn: 0,
                     level: 0,
                     role: 'Beginner',
-                    autolevelup: false,
+                    autolevelup: true,
 
-                    money: 0,
-                    healt: 100,
+                    money: 10000,
+                    healt: 1000,
                     limit: 100,
                     potion: 10,
                     sampah: 0,
