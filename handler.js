@@ -172,15 +172,15 @@ module.exports = {
                 if (typeof chat !== 'object') global.db.data.chats[m.chat] = {}
                 if (chat) {
                     if (!('isBanned' in chat)) chat.isBanned = false
-                    if (!('welcome' in chat)) chat.welcome = false
-                    if (!('detect' in chat)) chat.detect = false
+                    if (!('welcome' in chat)) chat.welcome = true
+                    if (!('detect' in chat)) chat.detect = true
                     if (!('sWelcome' in chat)) chat.sWelcome = ''
                     if (!('sBye' in chat)) chat.sBye = ''
                     if (!('sPromote' in chat)) chat.sPromote = ''
                     if (!('sDemote' in chat)) chat.sDemote = ''
-                    if (!('delete' in chat)) chat.delete = true
+                    if (!('delete' in chat)) chat.delete = false
                     if (!('antiBadword' in chat)) chat.antiBadword = false
-                    if (!('antiLink' in chat)) chat.antiLink = false
+                    if (!('antiLink' in chat)) chat.antiLink = true
                     if (!('rpg' in chat)) chat.delete = true
                     if (!('nsfw' in chat)) chat.delete = false
                     if (!('simi' in chat)) chat.simi = false
@@ -188,14 +188,14 @@ module.exports = {
                     if (!('antiToxic' in chat)) chat.antiToxic = false
                 } else global.db.data.chats[m.chat] = {
                     isBanned: false,
-                    welcome: false,
-                    detect: false,
+                    welcome: true,
+                    detect: true,
                     sWelcome: '',
                     sBye: '',
                     sPromote: '',
                     sDemote: '',
-                    delete: true,
-                    antiLink: false,
+                    delete: false,
+                    antiLink: true,
                     rpg: true,
                     nsfw: false,
                     simi: false,
@@ -508,9 +508,9 @@ module.exports = {
                 }
                 break
             case 'promote':
-                text = (chat.sPromote || this.spromote || conn.spromote || '@user ```is now Admin```')
+                text = (chat.sPromote || this.spromote || conn.spromote || '@user ```Is Now As Admin```')
             case 'demote':
-                if (!text) text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ```is no longer Admin```')
+                if (!text) text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ```Is No Longer As Admin```')
                 text = text.replace('@user', '@' + participants[0].split('@')[0])
                 if (chat.detect) this.sendMessage(id, text, MessageType.extendedText, {
                     contextInfo: {
@@ -540,15 +540,15 @@ Untuk mematikan fitur ini, ketik
 
 global.dfail = (type, m, conn) => {
     let msg = {
-        rowner: 'Perintah ini hanya dapat digunakan oleh _*OWWNER!1!1!*_',
-        owner: 'Perintah ini hanya dapat digunakan oleh _*Owner Bot*_!',
-        mods: 'Perintah ini hanya dapat digunakan oleh _*Moderator*_ !',
-        premium: 'Perintah ini hanya untuk member _*Premium*_ !',
-        group: 'Perintah ini hanya dapat digunakan di grup!',
-        private: 'Perintah ini hanya dapat digunakan di Chat Pribadi!',
-        admin: 'Perintah ini hanya untuk *Admin* grup!',
-        botAdmin: 'Jadikan bot sebagai *Admin* untuk menggunakan perintah ini!',
-        unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Manusia.16*',
+        rowner: 'Perintah Ini Hanya Dapat Digunakan Oleh _*OWNER*_!',
+        owner: 'Perintah Ini Hanya Dapat Digunakan Oleh _*Owner Bot*_!',
+        mods: 'Perintah Ini Hanya Dapat Digunakan Oleh _*Moderator*_ !',
+        premium: 'Perintah Ini Hanya Untuk _*Premium User*_ !',
+        group: 'Perintah Ini Hanya Dapat Digunakan Di Grup!',
+        private: 'Perintah Ini hanya Dapat Digunakan Di Chat Pribadi!',
+        admin: 'Perintah Ini Hanya Untuk *Admin* Grup!',
+        botAdmin: 'Jadikan Bot Sebagai *Admin* Untuk Menggunakan Perintah Ini!',
+        unreg: 'Silahkan Daftar Untuk Menggunakan Fitur Ini Dengan Cara Mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Cocopie.14*',
         restrict: 'Fitur ini di *disable*!'
     }[type]
     if (msg) return m.reply(msg)
