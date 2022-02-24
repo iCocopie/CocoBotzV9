@@ -17,12 +17,12 @@ let handler = async function (m, { text, usedPrefix, command }) {
   let sn = createHash('md5').update(m.sender).digest('hex')
   let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : m.fromMe ? conn.user.jid : m.sender
   m.reply(`
-━━━━ 「 *Successful Registration* 」━━━━
+━━━━ 「 *Success* 」━━━━
 
 ╭─• 〘 INFO 〙
-│➥ Nama: ${name}
-│➥ Umur: ${age} Tahun
-│➥ Hadiah: ${prems.includes(who.split`@`[0]) ? '✅ Silahkan chat owner untuk claim hadiah' : '❌ Bukan User Premium'}
+│➥ Nama : ${name}
+│➥ Umur : ${age} Tahun
+│➥ Hadiah : ${prems.includes(who.split`@`[0]) ? '✅ Silahkan Chat Owner Untuk Claim Hadiah' : '❌ Bukan User Premium'}
 ╰──────•
 
 Ketik ${usedPrefix} untuk mendapatkan SERIAL NUMBER\n
