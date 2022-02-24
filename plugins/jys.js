@@ -10,13 +10,11 @@ let handler = async (m, { command }) => {
 bear = "Source Code"
 ye = `@${m.sender.split`@`[0]}`
 let esce = `
-Hai Sayangku ${ye} Lagi Nyari Sc Botku Ya:v
+Hai ${ye} Lagi Nyari Sc Bot Ya 🗿
 
-Nih Link Sc Nya Dibawah :
-https://pastelink.net/v20Md
-
-_*Jangan Lupa Di Like Dan Subscribe Tod...!!!*_
-_*Gak Subscribe Gak Work Njingg...!!!*_`
+Source Code :
+https://github.com/iCocopie/CocoBotzV9
+`
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
@@ -26,14 +24,14 @@ _*Gak Subscribe Gak Work Njingg...!!!*_`
            hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {
-               displayText: '𝙶𝙴𝚃 𝙱𝙾𝚃',
+               displayText: 'Source Code',
                url: `${ApiiKey}`
              }
 
            },
                {
              quickReplyButton: {
-               displayText: '𝙱𝙰𝙲𝙺 𝚃𝙾 𝙼𝙴𝙽𝚄',
+               displayText: 'Back To Menu',
                id: '.menu',
              }
 
