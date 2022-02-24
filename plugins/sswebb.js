@@ -11,7 +11,7 @@ let levelling = require('../lib/levelling')
 let { exp, limit, level, money, role } = global.db.data.users[m.sender]
 let { min, xp, max } = levelling.xpRange(level, global.multiplier)
 let math = max - xp
-/*conn.sendFile(m.chat, img, '', `Halo juga kak ${conn.getName(m.sender)}`, { key: { fromMe: false, remoteJid: 'status@broadcast', participant: '0@s.whatsapp.net' }, message: { orderMessage: { message: `${ucapan()} ${conn.getName(m.sender)}`, itemCount: 999, thumbnail: fs.readFileSync('./src/mikey.jpg')
+/*conn.sendFile(m.chat, img, '', `Halo juga kak ${conn.getName(m.sender)}`, { key: { fromMe: false, remoteJid: 'status@broadcast', participant: '0@s.whatsapp.net' }, message: { orderMessage: { message: `${ucapan()} ${conn.getName(m.sender)}`, itemCount: 999, thumbnail: fs.readFileSync('./src/img1.jpg')
 }}})*/
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let name = m.fromMe ? conn.user : conn.contacts[who]
@@ -29,7 +29,7 @@ var seconds = Math.floor(seconds % 60);
 return `${pad(hours)}Jam ${pad(minutes)}Menit ${pad(seconds)}Detik`
 }
 runtime = process.uptime()
-          teks = `𝑲𝒊𝒏𝒈 𝑶𝒇 𝑩𝒆𝒂𝒓 𝑶𝒇𝒇𝒊𝒄𝒊𝒂𝒍`// \n\n${kyun(runtime)}`
+          teks = `Cocopie`// \n\n${kyun(runtime)}`
           run = `${kyun(runtime)}`
           var itsme = `0@s.whatsapp.net`
           var split = `teks`
@@ -85,28 +85,29 @@ runtime = process.uptime()
           let babi = await fetch(`https://api.lolhuman.xyz/api/random/quotes?apikey=${bearkey}`)
           let quote = babi.result
           let jawab = `
-┏━━━ꕥ〔 *${namabot}* 〕ꕥ━⬣
-┃✾ Hai, ${pushname2}!
-┃
-┃✾ Tersisa *${limit} Limit*
-┃✾ Role *${role}*
-┃✾ Level *${level}* 
-┃✾ XP: *TOTAL ${exp} (${exp - min} / ${xp})*
-┗━ꕥ
-┏━ꕥ 
-┃✾ Hari : *${week} ${weton}* 
-┃✾ Tanggal : *${date}*
-┃✾ Tanggal Islam : *${dateIslamic}*
-┃✾ Jam : *${time} Wib*
-┗━ꕥ
-┏━ꕥ
-┃✾ Uptime: *${uptime} (${muptime})*
-┃✾ Database: ${rtotalreg} dari ${totalreg}
-┃✾ Youtube:
-┃✾ https://pastelink.net/v20Md
-┗━━━━━━ꕥ
-━━━ꕥ〔 _*Quotes Harian*_ 〕ꕥ━⬣
-“${pickRandom(global.quotes)}”`.trim()
+🎀 Hari : *%week %weton* 
+🗓️ Tanggal Masehi : *%date*
+📆 Tanggal Hijriyah : *%dateIslamic*
+⏲ Server Time : *%time*
+
+❏ 👤 *USER INFO*
+🤾‍♂️ Name : *${pushname2}*
+🪀 WhatsApp Version : 2.21.24.22
+🎁 Limit : *%limit*
+🏷 Role : *%role*
+🗞 Level : *%level* 
+🚀 Total XP : %totalexp
+
+❏ 🤖️ *BOT INFO*
+🦦 Bot Name : *${namabot}*
+🪄 Mode : Multi Mode
+🧭 Prefix : Multi Prefix
+💻 Platform : Linux
+🌏 Browser : Chrome
+🌐 Server : Baileys
+⏰ Uptime : *%uptime (%muptime)*
+📥 Database : *%rtotalreg* Of *%totalreg*
+`.trim()
 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
@@ -116,21 +117,21 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
            hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {
-               displayText: 'Link Script',
-               url: 'https://pastelink.net/v20Md',
+               displayText: 'Source Code',
+               url: 'https://github.com/CocoBotzV9',
              }
 
            },
                {
              urlButton: {
-               displayText: 'Link Group',
-              url : 'https://chat.whatsapp.com/HAZ6yFgCafUAeDbNH33IrL',
+               displayText: 'Owner',
+              url : 'https://wa.me/628992029499',
              }
 
            },
               {
              quickReplyButton: {
-               displayText: 'Tampilkan Menu',
+               displayText: 'Show Menu',
                id: '.allmenu',
              }
 
