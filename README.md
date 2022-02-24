@@ -1,10 +1,10 @@
 <p align="center">
-<img src="https://github.com/CocoBotzV10/lol_1.jpg" alt="CocoBotz" width="500"/>
+<img src="https://github.com/CocoBotzV10/lol_1.jpg" alt="CocoBotz-MD" width="500"/>
 
 
 </p>
 <p align="center">
-<a href="#"><img title="YUKI BOT MULTI DEVICE" src="https://img.shields.io/badge/YUKI BOT MULTI DEVICE-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
+<a href="#"><img title="COCOBOTZ MULTI DEVICE" src="https://img.shields.io/badge/COCOBOTZ MULTI DEVICE-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
 <a href="https://github.com/saipulanuar/v20-Md"><img title="Author" src="https://img.shields.io/badge/Author-KINGOFBEAR-red.svg?style=for-the-badge&logo=github"></a>
