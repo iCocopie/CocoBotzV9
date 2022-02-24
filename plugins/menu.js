@@ -11,7 +11,7 @@ let tags = {
   'premium': 'Premium Menu',
   'group': 'Group Menu',
   'absen': 'Absen Menu',
-  'vote': Vote Menu',
+  'vote': 'Vote Menu',
   'owner': 'Owner Menu',
   'fun': 'Fun Menu',
   'sticker': 'Convert Menu',
@@ -173,28 +173,28 @@ let handler = async (m, { conn, usedPrefix: _p, command }) => {
            },
              {
              callButton: {
-               displayText: '𝚙𝚑𝚘𝚗𝚎 𝚗𝚞𝚖𝚋𝚎𝚛',
-               PhoneNumber: '6288279268363'
+               displayText: 'P𝚑𝚘𝚗𝚎 N𝚞𝚖𝚋𝚎𝚛',
+               PhoneNumber: '628992029499'
              }
 
            },
                {
              quickReplyButton: {
-               displayText: '𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁',
+               displayText: 'Developer',
                id: '.owner',
              }
 
            },
                {
              quickReplyButton: {
-               displayText: '𝙶𝙴𝚃 𝙱𝙾𝚃',
+               displayText: 'Donasi',
                id: '.donasi',
              }
 
            },
                {
              quickReplyButton: {
-               displayText: 'YukiBot 𝚝𝚎𝚊𝚖',
+               displayText: 'CocoBotz Team',
                id: '.tqto',
              }
            }]
