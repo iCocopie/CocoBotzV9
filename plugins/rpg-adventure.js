@@ -32,10 +32,10 @@ let handler = async (m, { conn, usedPrefix, DevMode }) => {
             let sampah = `${Math.floor(Math.random() * 300)}`.trim()
             let legendary = (_legendary * 1)
             let str = `
-Nyawa mu berkurang -${healt * 1} karena Kamu telah berpetualang sampai ${pickRandom(['Jepang', 'Korea', 'Bali', 'Amerika', 'Iraq', 'Arab', 'Pakistan', 'German', 'Finlandia', 'Ke bawa dunia mimpi', 'Ujung dunia', 'Mars', 'Bulan', 'Pluto', 'Matahari', 'Hatinya dia', '...'])} dan mendapatkan
-*exp:* ${exp} 
-*uang:* ${uang}
-*sampah:* ${sampah}${potion == 0 ? '' : '\n*Potion:* ' + potion + ''}${diamond == 0 ? '' : '\n*diamond:* ' + diamond + ''}${common == 0 ? '' : '\n*common crate:* ' + common + ''}${uncommon == 0 ? '' : '\n*uncommon crate:* ' + uncommon + ''}
+Health Mu Berkurang -${healt * 1} Karena Kamu Telah Berpetualang Sampai ${pickRandom(['Jepang', 'Korea', 'Bali', 'Amerika', 'Iraq', 'Arab', 'Pakistan', 'German', 'Finlandia', 'Dunia Mimpi', 'Ujung Dunia', 'Mars', 'Bulan', 'Pluto', 'Matahari', 'Hatinya Dia', '...'])} Dan Mendapatkan
+*EXP :* ${exp} 
+*Money :* ${uang}
+*Trash :* ${sampah}${potion == 0 ? '' : '\n*Potion :* ' + potion + ''}${diamond == 0 ? '' : '\n*Diamond :* ' + diamond + ''}${common == 0 ? '' : '\n*Common Crate :* ' + common + ''}${uncommon == 0 ? '' : '\n*Uncommon Crate:* ' + uncommon + ''}
 `.trim()
             conn.reply(m.chat, str, m)
             if (mythic > 0) {
