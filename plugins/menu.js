@@ -162,7 +162,7 @@ let handler = async (m, { conn, usedPrefix: _p, command }) => {
          hydratedTemplate: {
            hydratedContentText: text.trim(),
            locationMessage: { 
-           jpegThumbnail: await (await fetch(`https://i.ibb.co/jfZVKmC/babi2.jpg`)).buffer() },
+           jpegThumbnail: await (await fetch(`https://ibb.co/yp2H3dN`)).buffer() },
            hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {
