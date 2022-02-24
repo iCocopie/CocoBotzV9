@@ -34,7 +34,7 @@ lolkey = 'rey2k21'
 zekskey = 'apivinz'
 xteamkey = 'https://pastelink.net/v20Md'
 leyskey = 'dappakntlll'
-bearkey = 'https://github.com/iCocopie/CocoBotzV9'
+bearkey = 'https://pastelink.net/v20Md'
 ApiiKey = 'https://github.com/iCocopie/CocoBotzV9'
 vinkey = 'vinko'
 
