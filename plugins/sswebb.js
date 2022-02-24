@@ -113,7 +113,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
          hydratedTemplate: {
            hydratedContentText: jawab,
            locationMessage: { 
-           jpegThumbnail: await (await fetch(`https://i.ibb.co/jfZVKmC/babi2.jpg`)).buffer() }, 
+           jpegThumbnail: await (await fetch(`https://ibb.co/yp2H3dN`)).buffer() }, 
            hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {
