@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://i.ibb.co/KsMxC5P/thumb.jpg" alt="YUKI BOT" width="500"/>
+<img src="https://github.com/CocoBotzV10/lol_1.jpg" alt="CocoBotz" width="500"/>
 
 
 </p>
